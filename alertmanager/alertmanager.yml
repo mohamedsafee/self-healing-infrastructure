@@ -1,0 +1,7 @@
+route:
+  receiver: "self-healing-webhook"
+
+receivers:
+  - name: "self-healing-webhook"
+    webhook_configs:
+      - url: "http://webhook:5001/alerts"
